@@ -1,208 +1,215 @@
 /* Footer Styles */
 
-  
-  /* Top Section */
-  .topSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 350px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 20px;
+
+/* Top Section */
+.topSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 350px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+
+
+
+.newsletter h4 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.newsletterForm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputField {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.subscribeButton {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact {
+  flex: 1 1 200px;
+}
+
+.contact h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.contact p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.currencyTitle {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.currencyNote {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+/* Links Section */
+.linksSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+.linksSection h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400s;
+  line-height: 1.8;
+}
+
+.linksSection ul li {
+  padding-bottom: 12px;
+}
+
+/* Social and Payment Icons */
+.socialIcons img {
+  width: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.paymentIcons img {
+  width: 385px;
+  cursor: pointer;
+}
+
+.paymentIcons img {
+  margin-bottom: 10px;
+}
+
+/* Bottom Section */
+.bottomSection {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+
+  /* Tablet */
+  .topSection,
+  .linksSection {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
   }
-  
- 
-  
-  .newsletter h4 {
-    font-size: 18px;
-    font-weight: 800;
-    margin-bottom: 10px;
-  }
-  
-  .newsletter p {
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: 400;
-  }
-  
+
   .newsletterForm {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
     gap: 10px;
   }
-  
-  .inputField {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
+
+  .inputField,
   .subscribeButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile */
+
+  .footer {
     background-color: #000;
     color: #fff;
-    border: 1px solid #fff;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px 19px;
   }
-  
-  .contact {
-    flex: 1 1 200px;
-  }
-  
-  .contact h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: 800;
-  }
-  
-  .contact p {
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .contact img {
-    width: 20px;
-    margin-right: 10px;
-  }
-  
-  .currencyTitle {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .currencyNote {
-    font-size: 10px;
-    margin-top: 5px;
-  }
-  
-  /* Links Section */
-  .linksSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
-  }
- 
-  
+
+
+  .newsletter h4,
+  .contact h4,
   .linksSection h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: 800;
-  }
-  
-  .linksSection ul {
-    list-style: none;
-    padding: 0;
     font-size: 16px;
-    font-weight: 400s;
-    line-height: 1.8;
   }
-  .linksSection ul li {
-    padding-bottom: 12px;
+
+  .newsletterForm {
+    flex-direction: row;
+
   }
-  
-  /* Social and Payment Icons */
-  .socialIcons img {
-    width: 40px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  .paymentIcons img {
-    width: 385px;
-    cursor: pointer;
-  }
-  
-  .paymentIcons img {
-    margin-bottom: 10px;
-  }
-  
-  /* Bottom Section */
-  .bottomSection {
-    text-align: center;
+
+  .inputField {
+    padding: 8px;
     font-size: 12px;
-    margin-top: 20px;
-    border-top: 1px solid #fff;
-    padding-top: 10px;
   }
-  
-  /* Media Queries */
-  @media (max-width: 1024px) { /* Tablet */
-    .topSection,
-    .linksSection {
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 20px;
-    }
-  
-    .newsletterForm {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 10px;
-    }
-  
-    .inputField,
-    .subscribeButton {
-      width: 100%;
-    }
+
+  .subscribeButton {
+    padding: 8px 15px;
+    font-size: 7px;
+    width: 70px;
   }
-  
-  @media (max-width: 768px) { /* Mobile */
 
-    .footer {
-      background-color: #000;
-      color: #fff;
-      padding: 10px 19px;
-    }
-    
-  
-    .newsletter h4,
-    .contact h4,
-    .linksSection h4 {
-      font-size: 16px;
-    }
-  
-    .newsletterForm {
-      flex-direction: row;
+  .socialIcons img {
+    width: 30px;
+  }
 
-    }
-  
-    .inputField {
-      padding: 8px;
-      font-size: 12px;
-    }
-  
-    .subscribeButton {
-      padding: 8px 15px;
-      font-size: 7px;
-      width: 70px;
-    }
-  
-    .socialIcons img{
-      width: 30px;
-    }
-    .paymentIcons img {
-      width: 282px;
-    }
+  .paymentIcons img {
+    width: 282px;
+  }
 
-    
-  
-    .bottomSection {
-      font-size: 10px;
-    }
-     
+
+
+  .bottomSection {
+    font-size: 10px;
+  }
+
   .linksSection div {
     flex: 1 1 157px;
   }
-   
-  }
-  
+
+}
+
 @media (min-width: 769px) {
   .footer {
     background-color: #000;
@@ -213,11 +220,10 @@
   .newsletter {
     flex: 1 1 300px;
   }
-  
+
   .linksSection div {
     flex: 1 1 200px;
   }
 
 
 }
-

@@ -20,7 +20,7 @@ export default function Footer() {
           </form>
         </div>
 
-       
+
 
 
         {/* Contact Section */}
@@ -73,7 +73,7 @@ export default function Footer() {
           <h4>mettā muse ACCEPTS</h4>
           <div className={styles.paymentIcons}>
             <img src="/frame.png" alt="icons" />
-            
+
           </div>
         </div>
       </div>
